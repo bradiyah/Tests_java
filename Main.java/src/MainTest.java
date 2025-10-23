@@ -22,20 +22,20 @@ class MainTest {
     }
 
     @Test
-    void getSalaryMean() {
+    public void getSalaryMean() {
         assertEquals(Main.getSalaryMean(salaries), 2216.6666666666665);
         assertEquals(Main.getSalaryMean(salaries2), 1520.0);
 
     }
 
     @Test
-    void getSalaryMedian() {
+    public void getSalaryMedian() {
         assertEquals(Main.getSalaryMedian(salaries), 2120);
         assertEquals(Main.getSalaryMedian(salaries2), 900);
     }
 
     @Test
-    void getPayroll() {
+    public void getPayroll() {
         assertEquals(Main.getPayroll(2200, 1, 17, false), 1848);
         assertEquals(Main.getPayroll(3000, 3, 20, true), 3050);
         assertEquals(Main.getPayroll(5000, 4, 22, false), 4300);
@@ -43,7 +43,7 @@ class MainTest {
     }
 
     @Test
-    void transposeMatrix() {
+    public void transposeMatrix() {
         matrix = new double[][]{{1,2,3},{4,5,6},{7,8,9}};
         matrixT = new double[][]{{1,4,7},{2,5,8},{3,6,9}};
         Assertions.assertArrayEquals(Main.transposeMatrix(matrix), matrixT);
